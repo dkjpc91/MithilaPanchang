@@ -7,8 +7,8 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/om"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/mp"
+        android:label="मिथिला पंचांग"
+        android:roundIcon="@mipmap/om"
         android:supportsRtl="true"
         android:theme="@style/Theme.MithilaPanchang"
         tools:targetApi="31">

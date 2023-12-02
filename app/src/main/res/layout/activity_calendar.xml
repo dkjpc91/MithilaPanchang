@@ -1,9 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".calendar">
+    android:orientation="vertical"
+    android:background="#E8F1F0"
+    tools:context=".home">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="-90dp"
+        android:src="@drawable/header"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="-130dp"
+        android:padding="27dp"
+        android:src="@drawable/splashtxt"/>
+
+    <ImageSwitcher
+        android:id="@+id/calendarImageSwitcher"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/borderred"
+        android:layout_height="150dp"/>
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/back"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/monthName"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textSize="32dp"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_height="40dp" />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:src="@drawable/forward"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+        
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentContainer"
+        android:layout_margin="5dp"/>
+
+
+
+
+
+
+</LinearLayout>

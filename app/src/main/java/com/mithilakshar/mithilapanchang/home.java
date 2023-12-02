@@ -70,6 +70,7 @@ public class home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(getApplicationContext(),calendar.class);
+                i.putExtra("month", hindiMonth);
                 startActivity(i);
             }
         });
